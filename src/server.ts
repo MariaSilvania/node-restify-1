@@ -13,5 +13,5 @@ server.get('/hello/:name', respond);
 server.head('/hello/:name', respond);
 
 server.listen(server_port, server_ip_address, function() {
-  console.log('%s listening at %s', server.name, server.url);
+  console.log( "Listening on " + server_ip_address + ", port " + server_port);
 });
