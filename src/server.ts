@@ -1,10 +1,10 @@
 import * as restify from 'restify';
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8081
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 function respond(req, res, next) {
-  res.send('hello ' + req.params.name);
+  res.send('You supply ' + req.params.name);
   next();
 }
 
